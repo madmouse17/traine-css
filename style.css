@@ -1,0 +1,45 @@
+body {
+    background-image:linear-gradient(black, black), url("./image/bg.jpg");
+    background-size: cover;
+    background-blend-mode: saturation;
+    
+    padding-top: 2%;
+  }
+  .menu-container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 20%;
+  }
+.menu{
+   display: flex;
+   flex-wrap: nowrap;
+   background-color: rgb(31, 28, 25);
+   backdrop-filter: blur;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+   width: 80%;
+   align-self: center;
+   
+
+}
+
+.menu > .item{
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 244, 235, 0.80);
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.menu-img-center{
+    padding-top: 1%;
+}
+.grid-container{
+    display: block;
+    background-color: red;
+  }
