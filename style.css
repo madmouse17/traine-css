@@ -1,45 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;700&family=Roboto:ital,wght@1,700&display=swap");
+
+@font-face {
+  font-family: "Angel rhapsody";
+  src: url("font/Angel rhapsody.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --main-color: #201d18;
+  --second-color: #db9f6a;
+  --body-color: #d0fcff;
+  --font-color-header: rgba(255, 244, 235, 0.8);
+
+  --main-font: "AR One Sans", sans-serif;
+  --heading-font: "Angel rhapsody", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
-    background-image:linear-gradient(black, black), url("./image/bg.jpg");
-    background-size: cover;
-    background-blend-mode: saturation;
-    
-    padding-top: 2%;
-  }
-  .menu-container{
-    display: flex;
-    flex-wrap: nowrap;
-    padding-left: 20%;
-  }
-.menu{
-   display: flex;
-   flex-wrap: nowrap;
-   background-color: rgb(31, 28, 25);
-   backdrop-filter: blur;
-   border-radius: 20px;
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   -ms-border-radius: 20px;
-   -o-border-radius: 20px;
-   width: 80%;
-   align-self: center;
-   
-
+  background-image: url("image/bg.jpg");
 }
 
-.menu > .item{
-    width: 50%;
-    text-align: center;
-    font-size: 12px;
-    color: rgba(255, 244, 235, 0.80);
-    padding: 20px;
-    align-items: center;
-    
+.container {
+  max-width: 1520px;
 }
 
-.menu-img-center{
-    padding-top: 1%;
+.navbar .nav-wrapper {
+  margin: auto;
+  position: relative;
+  align-items: center;
 }
-.grid-container{
-    display: block;
-    background-color: red;
-  }
+
+.nav-wrapper .menu {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-color: var(--main-color);
+  gap: 50px;
+  height: 104px;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  backdrop-filter: blur(15px);
+}
+
+.menu .menu-item {
+  color: var(--font-color-header);
+  font-weight: bold;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.head-wrapper {
+  margin: auto;
+}
+.head-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.head-content .left-content {
+  flex: 0 0 30%;
+}
+.head-content .right-content {
+  flex: 0 0 50%;
+}
+
+.head-content .left-content .head-title {
+  font-family: var(--heading-font);
+  color: white;
+  font-size: 7rem;
+  letter-spacing: -2.24px;
+  padding-bottom: 30px;
+}
+.head-content .left-content .head-title .head-span {
+  color: #db9f6a;
+}
+
+.left-content .img-head {
+  margin: auto;
+  display: flex;
+  padding-bottom: 50px;
+}
+.left-content .head-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.book-visit {
+  position: absolute;
+  padding-left: 5.5%;
+  padding-top: 1.5%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+}
+.bottom-left {
+  display: flex;
+  margin: auto;
+}
+.icon-box {
+  height: 52px;
+  width: 52px;
+  background-color: var(--second-color);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.icon-box .icon-box-center {
+  margin: 14px;
+}
+.color-secondary {
+  color: var(--second-color);
+}
+.color-white {
+  color: white;
+}
+.color-grey {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.open-hours {
+  padding-left: 20px;
+  font-size: 1.3rem;
+}
+
+.img-front {
+  position: absolute;
+  right: 6%;
+}
+
+.subhead-wrapper {
+  background-color: var(--main-color);
+  max-height: 140px;
+  max-width: 1920px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  padding: 10px;
+}
+.subhead-category {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.text-subhead {
+  font-size: 2rem;
+  padding-left: 10px;
+}
+
+.portfolio .portfolio-wrapper {
+  margin: auto;
+  position: relative;
+  align-items: center;
+}
+
+.portfolio-box {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  flex: wrap;
+}
+
+.heading-font {
+  font-family: var(--heading-font);
+}
+.portfolio-left {
+  flex: 0 0 30%;
+  height: 8--px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  padding: 10px 10px 0 10px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+.content .text-size {
+  font-size: 4rem;
+}
+
+.portfolio-left .content .img-center {
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+.portfolio-middle .img-box {
+  background-color: white;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 485px;
+  height: 324px;
+  margin-top: 30px;
+}
+
+.portfolio-middle .img-box .text-middle-top{
+  position: absolute;
+  bottom: 52%;
+  left: 57%;
+  color: black;
+}
+.portfolio-middle .img-box .text-middle-bottom{
+  position: absolute;
+  bottom: 7%;
+  left: 55%;
+  color: black;
+  
+}
+.portfolio-middle .img-box .text-middle{
+  font-size: 1.5rem;
+  font-family: var(--heading-font);
+}
+
+.portfolio-right {
+  flex: 0 0 30%;
+  height: 8--px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+.portfolio-right .content .bottom {
+  padding: 0px 24px 50px 50px;
+}
+
+.portfolio-right .content .bottom .contact {
+  background-color: var(--second-color);
+  margin-top: 40px;
+  padding: 20px 32px;
+  border-radius: 10px;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+.portfolio-right .content .bottom .texted-bottom {
+  font-size: 1.5rem;
+}

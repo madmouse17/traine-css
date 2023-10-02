@@ -3,27 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Traine CSS</title>
+    <title>Traine 2 CSS</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="grid-container">
-    <div class="menu-container">
-      <div class="menu">
-        <div class="item">HOME PAGE</div>
-        <div class="item">PORTOFOLIO</div>
-        <div class="item">ABOUT US</div>
-        <span class="menu-img-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 70 70" fill="none">
-                <path d="M35 0L47.6219 22.3781L70 35L47.6219 47.6219L35 70L22.3781 47.6219L0 35L22.3781 22.3781L35 0Z" fill="#DB9F6A"/>
-                </svg>
-        </span>
-        <div class="item">INQUIRIES</div>
-        <div class="item">PRICING</div>
-        <div class="item">CHALLENGES</div>
+    <header>
+      <div class="navbar">
+        <div class="container nav-wrapper">
+          <ul class="menu">
+            <li><a class="menu-item" href="#">HOME PAGE</a></li>
+            <li><a class="menu-item" href="#">PORTOFOLIO</a></li>
+            <li><a class="menu-item" href="#">ABOUT US</a></li>
+            <span class="menu-img-center">
+              <img src="./image/star.svg" alt="star" />
+            </span>
+            <li><a class="menu-item" href="#">INQUIRIES</a></li>
+            <li><a class="menu-item" href="#">PRICING</a></li>
+            <li><a class="menu-item" href="#">CHALLENGES</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div>a</div>
+    </header>
 
+    <section>
+      <div class="container head-wrapper">
+        <div class="head-content">
+          <div class="left-content">
+            <p class="head-title">
+              Body paintings that <span class="head-span">Defies</span> Your
+              Soul
+            </p>
+            <a href="#">
+              <div class="img-head">
+                <img src="./image/poligon.svg" alt="poligon" />
+                <img class="head-padding" src="./image/head.svg" alt="head" />
+                <img src="./image/poligon.svg" alt="poligon" />
+                <p class="book-visit">BOOK A VISIT</p>
+              </div>
+            </a>
+            <div class="bottom-left">
+              <div class="icon-box">
+                <img
+                  class="icon-box-center"
+                  src="./image/clock.svg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="open-hours">
+                <p class="text-open color-secondary">
+                  Mon-Fri <span class="color-white"> 11:00-21:00</span>
+                </p>
+                <p class="text-open color-secondary">
+                  Sat-Sun <span class="color-white"> 14:00-20:00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="img-right">
+              <img class="img-back" src="./image/behind-img.svg" alt="" />
+              <img class="img-front" src="./image/girl.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container subhead-wrapper">
+        <div class="subhead-wrapper">
+          <div class="subhead-category">
+            <img src="./image/subhead/layers.svg" alt="" />
+            <h5 class="color-white text-subhead">Layers</h5>
+          </div>
+          <div class="subhead-category">
+            <img src="./image/subhead/sysphus.svg" alt="" />
+            <h5 class="color-white text-subhead">Sysiphus</h5>
+          </div>
+          <div class="subhead-category">
+            <img src="./image/subhead/circooles.svg" alt="" />
+            <h5 class="color-white text-subhead">Circooles</h5>
+          </div>
+          <div class="subhead-category">
+            <img src="./image/subhead/catalog.svg" alt="" />
+            <h5 class="color-white text-subhead">Catalog</h5>
+          </div>
+          <div class="subhead-category">
+            <img src="./image/subhead/quotient.svg" alt="" />
+            <h5 class="color-white text-subhead">Quotients</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container portfolio-wrapper">
+        <div class="portfolio-box">
+          <div class="portfolio-left">
+            <div class="content">
+              <p class="color-white heading-font text-size">
+                Tailored Process will make you scream, but then happy!
+              </p>
+              <img
+                class="img-center"
+                src="./image/portfolio/people-tatoo.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="portfolio-middle">
+            <div class="img-box">
+             
+                <img src="./image/portfolio/kong.svg" alt="" />
+            
+              <div class="text-middle-top text-middle">
+                <p >$ 2800.00</p>
+              </div>
+              
+             
+            </div>
+           
+            <div class="img-box">
+              <img src="./image/portfolio/snake.png" alt="" />
+              <div class="text-middle-bottom text-middle">
+                <p >$ 1500.00</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="portfolio-right">
+            <div class="content">
+              <img
+                class="img-center"
+                src="./image/portfolio/jarum-tato.png"
+                alt=""
+              />
+              <div class="bottom">
+                <p class="color-white heading-font text-size">
+                  Highest rated Tatoo Club in the California.
+                </p>
+                <p class="color-grey texted-bottom">
+                  Don’t hesitate. No one has ever regreted the their tatoos!
+                  Contact us now, and we’ll help you!
+                </p>
+
+                <button class="contact">CONTACTS US NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
